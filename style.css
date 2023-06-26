@@ -16,10 +16,10 @@ header{
 
 
 .headerlogo{
-    width: 135px;
+    width: 145px;
     padding: 15px;
     filter: invert(26%) sepia(28%) saturate(1199%) hue-rotate(137deg) brightness(97%) contrast(97%);
-    margin-right: -100px;
+    cursor: pointer;
 }
 
 
@@ -29,19 +29,20 @@ header{
 
 }
 
-.nav-bar-ul{
-    display: inline-flex;
+.nav-bar-ul{    
     list-style: none;
     font-size: 1.2rem;
 }
 
 li{
-    margin-left: 60px;
-    padding: 20px;
+    display: inline-block;
+    padding: 15px 40px 15px 40px;
+}
 
+li:hover{
+    color: #06f7f7;
 }
 .nav-bar-button{
-    display: inline-flex;
     text-align: center;
     background-color: #121919;
     padding: 10px 25px 10px 25px;
@@ -56,3 +57,4 @@ li{
     font-family: 'Montserrat', sans-serif;
 
 }
+
