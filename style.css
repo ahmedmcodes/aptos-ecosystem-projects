@@ -16,7 +16,7 @@ header{
 
 
 .headerlogo{
-    width: 145px;
+    width: 115px;
     padding: 15px;
     filter: invert(26%) sepia(28%) saturate(1199%) hue-rotate(137deg) brightness(97%) contrast(97%);
     cursor: pointer;
@@ -31,12 +31,12 @@ header{
 
 .nav-bar-ul{    
     list-style: none;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
 }
 
 li{
     display: inline-block;
-    padding: 15px 40px 15px 40px;
+    padding: 15px 30px 15px 30px;
 }
 
 li:hover{
@@ -58,3 +58,34 @@ li:hover{
 
 }
 
+header .icon {
+    display: none;
+}
+
+@media screen and (max-width: 837px) {
+    nav ul li.nav-hide, header button.nav-hide {
+        display: none;
+    }
+    
+    header a.icon {
+      display: block;
+      float: right;
+      margin-right: 15px;
+    }
+
+header i.fa {
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.headerlogo{
+    margin-top: 16px;
+}
+  }
+
+  @media screen and (max-width: 837px) {
+   nav ul li.nav-hide.responsive, header .nav-hide.responsive
+   { position: relative;
+    display: block;
+   }
+}
