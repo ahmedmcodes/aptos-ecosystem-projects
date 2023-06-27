@@ -1,7 +1,7 @@
 // Code for Making Responsive Nav Bar
 
 function myFunction() {
-    var x = document.querySelectorAll(".nav-hide");
+    var x = document.querySelectorAll(".nav-bar");
     x.forEach(function(element) {
       element.classList.toggle("responsive");
       console.log("The class was added")

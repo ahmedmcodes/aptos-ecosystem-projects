@@ -15,6 +15,10 @@ header{
 }
 
 
+  
+
+
+
 .headerlogo{
     width: 115px;
     padding: 15px;
@@ -23,54 +27,42 @@ header{
 }
 
 
-.nav-bar-anchor {
+.nav-links{
+    margin-top: 10px;
     text-decoration: none;
     color: rgb(180, 180, 180);
 
 }
 
-.nav-bar-ul{    
-    list-style: none;
-    font-size: 1.15rem;
-}
-
-li{
-    display: inline-block;
-    padding: 15px 30px 15px 30px;
-}
-
-li:hover{
+.nav-links:hover{
     color: #06f7f7;
 }
-.nav-bar-button{
+
+#button{
     text-align: center;
     background-color: #121919;
-    padding: 10px 25px 10px 25px;
-    margin: 20px 30px 20px 30px;
+    padding: 5px 15px 5px 15px;
+    margin: 25px 20px 20px 20px;
     border-radius: 10px;
-    border-style: solid;
-    border-color: #06f7f7;
-}
-
-#second-anchor{
+    border: 1px solid #06f7f7;
     color: #06f7f7;
-    font-family: 'Montserrat', sans-serif;
-
 }
 
-header .icon {
+
+
+header a.icon {
     display: none;
 }
 
-@media screen and (max-width: 837px) {
-    nav ul li.nav-hide, header button.nav-hide {
+@media screen and (max-width: 770px) {
+        .nav-bar a:not(:first-child) {
         display: none;
     }
-    
-    header a.icon {
+    .nav-bar a.icon {
       display: block;
       float: right;
       margin-right: 15px;
+      margin-top: 15px;
     }
 
 header i.fa {
@@ -83,9 +75,34 @@ header i.fa {
 }
   }
 
-  @media screen and (max-width: 837px) {
-   nav ul li.nav-hide.responsive, header .nav-hide.responsive
-   { position: relative;
+  @media screen and (max-width: 770px) {
+  .nav-bar.responsive{
+   display: flex;
+   flex-direction: column;
+  }
+  
+
+    .nav-bar.responsive a{
     display: block;
-   }
+    align-self: center;
+    margin-top: 25px;
+    font-size: 1.05rem;
+    padding: 5px;
+    transition: all 2s ease-in-out;
+
+       
+
+  }
+
+  .nav-bar.responsive a:first-child{
+    margin-top: 0px;
+    
+  }
+  .nav-bar.responsive a:last-child{
+    margin-top: 0px;
+    position: relative;
+
+  }
+
+
 }
