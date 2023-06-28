@@ -168,3 +168,61 @@ header i.fa {
     justify-content: center;
   }
 }
+
+/* Ecosystem Projects with CSS Grid */
+.main-content{
+  margin: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 0.5fr));
+  gap: 50px;
+}
+
+.child{
+  background-color: black;
+  width: 100%;
+  padding: 20px 20px 20px 20px;
+  border-radius: 10px;
+}
+
+.grid-child p{
+  margin-top: -10px;
+}
+.grid-child h3, .grid-child p{
+  text-align: center;
+}
+
+.grid-child img{
+  max-width: 25%;
+  max-height: 25%;
+  margin-top: 10%;
+  margin-left: 40%;
+}
+
+.grid-child a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9em;
+}
+
+.grid-child a:hover{
+  color: white;
+}
+
+
+.grid-child button{
+  text-align: center;
+  background-color: #121919;
+  padding: 10px 20px;
+  margin: 15px 15px 15px 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  border: 1px solid #06f7f7;
+  border-radius: 20px;
+  margin-left: 25%;
+
+}
+
+.grid-child button:hover{
+  background-color: black;
+  
+}
