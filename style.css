@@ -1,3 +1,6 @@
+
+
+
 body{
     margin: 0px;
     background-color: #121919;
@@ -7,6 +10,7 @@ body{
 }
 
 /* Nav Bar */
+
 
 header{
     display: flex;
@@ -46,6 +50,12 @@ header{
     border-radius: 10px;
     border: 1px solid #06f7f7;
     color: #06f7f7;
+}
+
+#button:hover{
+  background-color: #08555C;
+  color: white;
+
 }
 
 
@@ -105,4 +115,56 @@ header i.fa {
   }
 
 
+}
+
+/* Main Section */
+.cover{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: url(images/main-bg-image.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.cover h1, .cover p{
+  margin-left: 30px;
+  color: rgb(180, 180, 180);
+}
+
+.cover h1{
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 1.5rem;
+}
+.cover p{
+  margin-top: 0px;
+  font-weight: bold;
+}
+
+.cover .cover-anchor{
+  text-decoration: none;
+  color: #121919;
+}
+
+.cover .cover-button{
+  text-align: center;
+  background-color: #3FFDFF;
+  padding: 16px 40px;
+  margin: 20px;
+  border-radius: 9px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+
+
+}
+
+@media screen and (max-width: 770px) {
+  .cover{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
 }
