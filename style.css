@@ -171,11 +171,11 @@ header i.fa {
 
 /* Ecosystem Projects with CSS Grid */
 .main-content{
-  margin: 25px;
+  margin: 50px;
   display: grid;
   position: relative;
   grid-template-columns: repeat(auto-fill, minmax(250px, 0.9fr));
-  gap: 50px;
+  gap: 60px;
 }
 
 .child{
@@ -183,14 +183,22 @@ header i.fa {
   width: 100%;
   padding: 20px 20px 20px 20px;
   border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.child:hover{
+transform: scale(1.05);
+cursor: pointer;
 }
 
 .grid-child p{
-  margin-top: -10px;
-  text-transform: uppercase;
+  text-justify: inter-word;
+
 }
 .grid-child h3, .grid-child p{
   text-align: center;
+  text-transform: uppercase;
+
 }
 
 .grid-child img{
@@ -211,7 +219,7 @@ header i.fa {
 }
 
 
-.grid-child button{
+.grid-child button.grid-button{
   text-align: center;
   background-color: #121919;
   padding: 10px 20px;
@@ -227,13 +235,57 @@ header i.fa {
 
 .grid-child button:hover{
   background-color: black;
-  
+ 
 }
 
-/* .grid-child button.pancake{
-  margin-top: 60px;
+@media screen and (max-width: 775px) {
+  #section2 button.grid-button {
+    margin-left: 37%;
+    
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  #section2 button.grid-button {
+    margin-left: 30%;
+    
+  }
+
+}
+
+/* 
+.main-content-button-container{
+text-align: center;}
+
+.main-content-button{
+  text-align: center;
+  background-color: #3FFDFF;
+  padding: 16px 40px;
+  margin: 20px;
+  border-radius: 9px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
 } */
 
-/* .main-content .child-second img{
-margin-top: 50px;
+
+
+/* .main-content-button a{
+  text-decoration: none;
+  color: #121919;
 } */
+/* 
+@media screen and (max-width: 775px) {
+  #section2 button.grid-button {
+    margin-left: 37%;
+    
+  }
+  .main-content-button{
+    font-size: 12px;
+    border-radius: 7px;
+    padding: 10px 25px;
+    margin-top: 5px;
+  }
+} */
+
