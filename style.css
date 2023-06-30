@@ -173,7 +173,8 @@ header i.fa {
 .main-content{
   margin: 25px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 0.5fr));
+  position: relative;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 0.9fr));
   gap: 50px;
 }
 
@@ -186,6 +187,7 @@ header i.fa {
 
 .grid-child p{
   margin-top: -10px;
+  text-transform: uppercase;
 }
 .grid-child h3, .grid-child p{
   text-align: center;
@@ -218,7 +220,8 @@ header i.fa {
   font-weight: 500;
   border: 1px solid #06f7f7;
   border-radius: 20px;
-  margin-left: 25%;
+  margin-left: 30%;
+  
 
 }
 
@@ -226,3 +229,11 @@ header i.fa {
   background-color: black;
   
 }
+
+/* .grid-child button.pancake{
+  margin-top: 60px;
+} */
+
+/* .main-content .child-second img{
+margin-top: 50px;
+} */
